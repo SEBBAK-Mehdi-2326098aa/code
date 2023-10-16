@@ -1,5 +1,6 @@
 #include <iostream>
 #include <termios.h>
+#include <stdlib.h>
 
 using namespace std;
 string demandeprediction(string name)
@@ -8,7 +9,7 @@ string demandeprediction(string name)
     string prediction;
     cin >> prediction;
     if (prediction=="papier" || prediction == "ciseaux" || prediction == "pierre"){
-        cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";//l'idée et de pouvoir cacher la saisie de l'utilisateur sur le terminale meme si ce n'est clairement pas le plus optimale, au moins ça marche;
+        system("clear");
     }
     unsigned valeur;
     if (prediction == "pierre" || prediction=="Pierre"){
@@ -25,10 +26,10 @@ string demandeprediction(string name)
             valeur=3;
         }
     while (valeur != 1 && valeur !=2 && valeur !=3){
-        cout << "il faut saisir soit pierre, papier ou ciseau." << endl;
+        cout << "il faut saisir soit pierre, papierpa ou ciseau." << endl;
         cin >> prediction;
         if (prediction=="papier" || prediction=="pierre" || prediction=="ciseaux" ){
-        cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+            system("clear");
             break;
         }
     }
