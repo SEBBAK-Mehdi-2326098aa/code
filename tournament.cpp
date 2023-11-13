@@ -539,14 +539,6 @@ int litUnEntier (){
     return stoi(uneChaine);
 }
 
-struct joueur {
-    string nom;
-    string prenom;
-    unsigned numEquipe;
-};
-
-
-
 
 vector < string > participants () {
 
